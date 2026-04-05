@@ -1,13 +1,11 @@
 
 
 
-Repositorio con los ajustes para Pandoc para mi documentación personal.
+Pandoc template for several kinds of documents: notes, tutorials, technical
+docs, etc.
 
-Este repositorio suelo incluirlo como submódulo de Git de los repositorios
-de los distintos proyectos de documentación en particular.
-
-
-
+For Markdown documents to be converted to web format (HTML, CSS and maybe
+JavaScript).
 
 
 
