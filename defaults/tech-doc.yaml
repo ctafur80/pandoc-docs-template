@@ -1,0 +1,113 @@
+
+
+# Defaults file for every kind of docs generated with Pandoc.
+
+
+# Watch-out there are two ways of resolving paths:
+#
+# - Read by Pandoc: csl and highlight-style.
+# - Read by the web browser: css and html.
+
+
+from: markdown
+to: html
+
+
+output-file: index.html
+
+metadata-files:
+  - metad.yaml
+
+
+# Lo activo cuando deseo verlo también en otros dispositivos. Creo que en realidad no es
+# necesario para esto.
+# embed-resources: true
+
+standalone: true
+toc: true
+number-sections: false
+
+filters:
+  - citeproc
+
+cite-method: citeproc
+csl: ${.}/../csl/ieee.csl
+
+verbosity: INFO
+log-file: log.json
+
+table-of-contents: true
+toc-depth: 4
+
+section-divs: true
+# strip-empty-paragraphs: false
+
+# eol: lf # lf, crlf, or native
+# strip-comments: false
+# ascii: true
+# default-image-extension: ".png"
+
+html-math-method:
+  method: mathml
+
+email-obfuscation: javascript
+
+tab-stop: 2
+preserve-tabs: true
+
+reference-links: true
+reference-location: document
+markdown-headings: atx
+
+
+table-caption-position: below
+figure-caption-position: below
+
+
+resource-path:
+  - figures
+
+
+html-q-tags: true
+
+css:
+  - /docs/pandoc-docs-template/web/css/variables.css
+  - /docs/pandoc-docs-template/web/css/base-mobile-first.css
+  - /docs/pandoc-docs-template/web/css/tablas.css
+  - /docs/pandoc-docs-template/web/css/tabla-contenidos.css
+  - /docs/pandoc-docs-template/web/css/codigo.css
+  - /docs/pandoc-docs-template/web/css/matematicas.css
+  - /docs/pandoc-docs-template/web/css/desktop.css
+
+
+highlight-style: ${.}/../web/resaltado-codigo/zf-darker.theme
+
+
+fail-if-warnings: false
+dump-args: false
+ignore-args: false
+trace: false
+
+shift-heading-level-by: -1
+
+track-changes: accept
+
+
+# Ajustes para la web de salida.
+include-before-body:
+  - /docs/pandoc-docs-template/../web/html/elemento-breadcrumbs.html
+include-after-body:
+  - /docs/pandoc-docs-template/../web/html/etiqueta-final-main.html
+include-in-header:
+  - /docs/pandoc-docs-template/../web/html/elemento-nav.html
+  - /docs/pandoc-docs-template/../web/html/elemento-boton-nav-bar.html
+  # - /docs/pandoc-docs-template/../web/html/carga-breadcrumbs.html
+  # - /docs/pandoc-docs-template/../web/html/carga-nav-bar.html
+  # - /docs/pandoc-docs-template/../web/html/nameref.html
+  # - /docs/pandoc-docs-template/../web/html/carga-ajustes-mathjax.html
+
+
+
+
+
+
