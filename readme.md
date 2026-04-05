@@ -9,3 +9,12 @@ JavaScript).
 
 
 
+
+**Watch-out** there are two ways of resolving paths:
+
+- Read by Pandoc: csl and highlight-style.
+- Read by the web browser: css and html.
+
+
+
+
